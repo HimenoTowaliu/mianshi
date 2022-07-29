@@ -16,11 +16,53 @@
             border-bottom: 100px solid transparent;
             border-radius: 50%;
         }
+
+        .square {
+            width: 10%;
+            width: 10vw;
+            height: 10vw;
+            background: tomato;
+        }
     </style>
 </head>
 
 <body>
     <div class="div1"></div>
+    <div class="square"></div>
+    <div id="father"> <input type="text" name="" id="input1"> <input type="text" name="" id="input2"
+            placeholder="input2"></div>
+
 </body>
+<script>
+    //不允许鼠标右键
+    /*  document.addEventListener('contextmenu', function (e) {
+         console.log(e)
+         e.preventDefault()
+     }) */
+    let input1 = document.querySelector("#input1")
+
+    let input2 = document.querySelector("#input2")
+
+    input1.addEventListener('keyup', function (e) {
+        console.log(e)
+    })
+    console.log(input1.parentElement)
+    let father = document.querySelector('#father')
+    console.log(father.childNodes)
+    console.log(input1.nextSibling)
+    console.log(input1.nextElementSibling)
+    console.log(input2.previousElementSibling)
+    console.log(input2.previousSibling)
+    //创建元素
+    let input3 = document.createElement('input')
+    //添加到父节点最后
+    // father.appendChild(input3)
+    //添加元素input3 到指定元素之前input2
+    // father.insertBefore(input3, input2)
+    //移除子元素
+    father.removeChild(input1)
+    //阻止冒泡
+    father.stopPropagation()
+</script>
 
 </html>
