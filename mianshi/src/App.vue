@@ -1,16 +1,16 @@
 <template>
   <div>
-    <Js></Js>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Js from './components/Js/js.vue'
+// import Js from './components/Js/js.vue'
 
 export default {
   name: 'App',
   components: {
-    Js
+
   }
 }
 </script>
