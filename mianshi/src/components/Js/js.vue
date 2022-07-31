@@ -50,16 +50,16 @@ export default {
       console.log(!!{})
       console.log(Boolean({})) */
       // console.log(+0 === -0)
-      let obj2 = { name: 'ly', age: 19 }
-      let obj3 = { ...obj2 }
-      console.log(obj3)
-      obj2.age = 20
-      console.log(obj3)
-      let arr4 = [2, 3]
-      let [age1, age2] = [...arr4]
-      console.log(age1, age2)
+      /*  let obj2 = { name: 'ly', age: 19 }
+       let obj3 = { ...obj2 }
+       console.log(obj3)
+       obj2.age = 20
+       console.log(obj3)
+       let arr4 = [2, 3]
+       let [age1, age2] = [...arr4]
+       console.log(age1, age2) */
 
-      //看完vue知识点中 3 vue脚手架
+      console.log(!!undefined)
     }
   },
 }
